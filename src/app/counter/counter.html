@@ -1,0 +1,15 @@
+<h1 style="text-align: center;">Counter App</h1>
+<div style="text-align:center;">
+    <h2 class="counter">{{ count }}</h2>
+    <div>
+        <!-- M1: Using Separate Methods -->
+        <!-- <button (click)="decrementCount()" class="btn bg-red">Decrement</button>
+        <button (click)="resetCount()" class="btn bg-black">Reset</button>
+        <button (click)="incrementCount()" class="btn bg-green">Increment</button> -->
+
+        <!-- m2: Using Single Method with Action Parameter -->
+        <button (click)="handleCounter('decrement')" class="btn bg-red">Decrement</button>
+        <button (click)="handleCounter('reset')" class="btn bg-black">Reset</button>
+        <button (click)="handleCounter('increment')" class="btn bg-green">Increment</button>
+    </div>
+</div>
