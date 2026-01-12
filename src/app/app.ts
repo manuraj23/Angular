@@ -3,10 +3,11 @@ import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Profile } from './profile/profile';
 import { Counter } from './counter/counter';
+import { Events } from './events/events';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter],
+  imports: [Login, Signup,Profile,Counter,Events],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

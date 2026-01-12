@@ -29,7 +29,7 @@ export class Counter {
         break;
       case 'decrement':
         if (this.count > 0){
-          this.count--;
+          this.count--; 
         }
         else{
           alert("Count cannot be negative");
