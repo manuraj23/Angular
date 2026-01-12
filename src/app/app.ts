@@ -1,13 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Profile } from './profile/profile';
 import { Counter } from './counter/counter';
 import { Events } from './events/events';
+import { InputvalueGetSet } from './inputvalue-get-set/inputvalue-get-set';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
