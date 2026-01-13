@@ -5,10 +5,11 @@ import { Profile } from './profile/profile';
 import { Counter } from './counter/counter';
 import { Events } from './events/events';
 import { InputvalueGetSet } from './inputvalue-get-set/inputvalue-get-set';
+import { FirstForm } from './first-form/first-form';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

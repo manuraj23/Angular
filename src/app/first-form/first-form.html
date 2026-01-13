@@ -1,0 +1,20 @@
+<h1>Sample Form</h1>
+<div>
+    <div class="line1" >
+        <input type="text" placeholder="Enter Your Name" [(ngModel)]="name">
+        <input type="email" placeholder="Enter Your Email" [(ngModel)]="email">
+    </div>
+    <div class="line2" >
+        <input type="password" placeholder="Enter Your Password" [(ngModel)]="password">
+        <input type="number" placeholder="Enter Your Age" [(ngModel)]="age">
+    </div>
+    <div class="line3" >
+        <button (click)="submitForm()">Submit</button>
+    </div>
+</div>
+<div class ="output-section" >
+    <h3>Your Name: {{name}}</h3>
+    <h3>Your Email: {{email}}</h3>
+    <h3>Your Password: {{password}}</h3>
+    <h3>Your Age: {{age}}</h3>
+</div>
