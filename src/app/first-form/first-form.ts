@@ -21,3 +21,4 @@ export class FirstForm {
     alert(`Form Submitted!\nName: ${this.name}\nEmail: ${this.email}\nAge: ${this.age}\nPassword: ${this.password}`);
   }
 }
+
