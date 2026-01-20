@@ -6,10 +6,11 @@ import { Counter } from './counter/counter';
 import { Events } from './events/events';
 import { InputvalueGetSet } from './inputvalue-get-set/inputvalue-get-set';
 import { FirstForm } from './first-form/first-form';
+import { IfElse } from './if-else/if-else';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

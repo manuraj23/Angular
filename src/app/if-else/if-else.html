@@ -1,0 +1,24 @@
+<h1>If-Else-Statement</h1>
+
+<button (click)="clickMe()">{{display ? 'Hide' : 'Show'}}</button>
+
+@if(display){
+    <div>
+        Hello World! from If Block
+    </div>
+}
+
+<hr>
+
+<button (click)="toggleDivButton()">{{!toggleDiv ? 'Show' : 'Hide'}}</button>
+
+@if(toggleDiv){
+    <div>
+        Hello World! from Show Block
+    </div>
+}
+@else {
+    <div>
+        Hello World! from Hide Block
+    </div>
+}
