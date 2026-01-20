@@ -14,6 +14,6 @@ export class IfElse {
   }
 
   toggleDivButton(){
-    this.toggleDiv = !this.toggleDiv;
+    this.toggleDiv = !this.toggleDiv; 
   }
 }
