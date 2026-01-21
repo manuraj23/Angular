@@ -10,10 +10,11 @@ import { IfElse } from './if-else/if-else';
 import { ElseIf } from './else-if/else-if';
 import { SwitchCase } from './switch-case/switch-case';
 import { ForLoop } from './for-loop/for-loop';
+import { Signals } from './signals/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
