@@ -11,10 +11,11 @@ import { ElseIf } from './else-if/else-if';
 import { SwitchCase } from './switch-case/switch-case';
 import { ForLoop } from './for-loop/for-loop';
 import { Signals } from './signals/signals';
+import { ComputedSignals } from './computed-signals/computed-signals';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
