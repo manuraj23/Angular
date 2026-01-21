@@ -8,10 +8,11 @@ import { InputvalueGetSet } from './inputvalue-get-set/inputvalue-get-set';
 import { FirstForm } from './first-form/first-form';
 import { IfElse } from './if-else/if-else';
 import { ElseIf } from './else-if/else-if';
+import { SwitchCase } from './switch-case/switch-case';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
