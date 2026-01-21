@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, computed, effect, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-signals',
@@ -7,6 +7,15 @@ import { Component, effect, signal } from '@angular/core';
   styleUrl: './signals.css',
 })
 export class Signals {
+   
+  //data type with signals:
+  countSignal = signal<number | string | boolean >(0);
+  // or
+  countSignal2 : WritableSignal<number | string | boolean> = signal(0);
+  //or
+  // countSignal3:Signal<number>= computed(()=>200)
+
+
   count = signal(10);
   x = 20;
 
