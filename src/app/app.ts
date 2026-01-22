@@ -1,4 +1,4 @@
-import { Component, Input, signal } from '@angular/core';
+import { Component, effect, Input, signal } from '@angular/core';
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Profile } from './profile/profile';
@@ -12,10 +12,11 @@ import { SwitchCase } from './switch-case/switch-case';
 import { ForLoop } from './for-loop/for-loop';
 import { Signals } from './signals/signals';
 import { ComputedSignals } from './computed-signals/computed-signals';
+import { Effects } from './effects/effects';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
