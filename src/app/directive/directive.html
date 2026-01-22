@@ -1,0 +1,57 @@
+
+<h1>*ngFor Directive</h1>
+
+<ul>
+    <li *ngFor="let x of students">
+        {{x}}
+    </li>
+</ul>
+<!-- <ul>
+    <li *ngFor="let student of studentData">
+        {{student.name}}, {{student.alias}},{{student.age}}, {{student.city}}
+    </li>
+    
+</ul> -->
+
+<table class="table table-bordered table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Name</th>
+      <th>Alias</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of studentData">
+      <td>{{ student.name }}</td>
+      <td>{{ student.alias }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.city }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>*ngIf Directive</h1>
+<h1 *ngIf="show">Directives</h1>
+
+<button (click)="show = !show">{{show ? 'Hide' : 'Show'}} Directives</button>
+
+<H1 *ngIf="login; else elseBlock">Welcome User</H1>
+
+<ng-template #elseBlock>
+  <h1>Please Login</h1>
+</ng-template>
+
+<button (click)="login = !login">{{login ? 'Logout' : 'Login'}}</button>
+
+<!-- <div *ngIf="block === 0">Block 0 Content</div> -->
+
+<h1>*ngSwitch Directive</h1>
+<div [ngSwitch]="block">
+  <div *ngSwitchCase="0">Block 0 Content</div>
+  <div *ngSwitchCase="1">Block 1 Content</div>
+  <div *ngSwitchCase="2">Block 2 Content</div>
+  <div *ngSwitchDefault>Default Block Content</div>
+  <button (click)="handleClickSwitch()">Switch Block</button>
+</div>
