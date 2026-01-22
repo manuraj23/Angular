@@ -18,10 +18,13 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoList } from './todo-list/todo-list';
 import { DynamicStyling } from './dynamic-styling/dynamic-styling';
 import { Directive } from './directive/directive';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { RoutingHeader } from "./routing-header/routing-header";
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables,TwoWayBinding,TodoList,DynamicStyling,Directive],
+  // imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables,TwoWayBinding,TodoList,DynamicStyling,Directive,],
+  imports: [RouterLink, RouterOutlet, RoutingHeader],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
