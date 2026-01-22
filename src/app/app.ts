@@ -14,10 +14,11 @@ import { Signals } from './signals/signals';
 import { ComputedSignals } from './computed-signals/computed-signals';
 import { Effects } from './effects/effects';
 import { ContextualVariables } from './contextual-variables/contextual-variables';
+import { TwoWayBinding } from './two-way-binding/two-way-binding';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables,TwoWayBinding],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
