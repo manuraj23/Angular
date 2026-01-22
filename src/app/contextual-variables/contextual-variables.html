@@ -1,0 +1,31 @@
+<h1>contextual-variables</h1>
+
+<!-- @for(user of users;track user){
+    <h3>This is our {{$index+1}} and name is {{ user }}</h3>
+    <hr>
+
+} -->
+@for(user of users;track user; let i = $index){
+    @if($first){
+        <h3 style="color: red;">This is our {{i+1}} and name is {{ user }}</h3>
+    }
+    @else if($last){
+        <h3 style="color: green;">This is our {{i+1}} and name is {{ user }}</h3>
+    }
+    @else{
+        <h3>This is our {{i+1}} and name is {{ user }}</h3>
+    }
+
+}
+@for(user of users;track user; let i = $index){
+    @if($odd){
+        <h3 style="color: red;">This is our {{i+1}} and name is {{ user }}</h3>
+    }
+    @else{
+        <h3 style="color: green;">This is our {{i+1}} and name is {{ user }}</h3>
+    }
+    
+}
+@empty {
+    <h1>No Record Found</h1>
+}

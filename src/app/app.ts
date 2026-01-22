@@ -13,10 +13,11 @@ import { ForLoop } from './for-loop/for-loop';
 import { Signals } from './signals/signals';
 import { ComputedSignals } from './computed-signals/computed-signals';
 import { Effects } from './effects/effects';
+import { ContextualVariables } from './contextual-variables/contextual-variables';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
