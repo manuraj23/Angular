@@ -16,10 +16,11 @@ import { Effects } from './effects/effects';
 import { ContextualVariables } from './contextual-variables/contextual-variables';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoList } from './todo-list/todo-list';
+import { DynamicStyling } from './dynamic-styling/dynamic-styling';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables,TwoWayBinding,TodoList],
+  imports: [Login, Signup,Profile,Counter,Events,InputvalueGetSet,FirstForm,IfElse,ElseIf, SwitchCase, ForLoop, Signals, ComputedSignals,Effects,ContextualVariables,TwoWayBinding,TodoList,DynamicStyling],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

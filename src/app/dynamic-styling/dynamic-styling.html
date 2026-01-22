@@ -1,0 +1,15 @@
+<h1>Dynamic styling</h1>
+
+<!-- <p  [style.color]="color" 
+    [style.fontSize]="fontSize">
+    This text is dynamically styled!
+</p> -->
+
+<p  [style.color]="color" 
+    [style.fontSize.px]="fontSize">
+    This text is dynamically styled!
+</p>
+
+<h2 [style.fontSize.px]="zoom ? headingSizeBig : headingSizeSmall">Heading Big</h2>
+
+<button (click)="buttonZoom()">{{zoom ? 'Zoom In' : 'Zoom Out'}}</button>
